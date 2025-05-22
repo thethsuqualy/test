@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Styled Travel Card</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .card {
+      width: 300px;
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .image-container {
+      position: relative;
+    }
+
+    .image-container img {
+      width: 100%;
+      display: block;
+    }
+
+    .discount-badge {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: rgba(255,255,255,0.95);
+      padding: 5px 10px;
+      border-radius: 12px;
+      font-weight: bold;
+      font-size: 0.85rem;
+      color: #333;
+    }
+
+    .info {
+      padding: 1rem;
+    }
+
+    .info-top {
+      display: flex;
+      justify-content: space-between;
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .info-bottom {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      color: #333;
+      font-size: 0.95rem;
+    }
+
+    .info-bottom i {
+      margin-right: 8px;
+    }
+  </style>
+ 
+</head>
+<body>
+
+  <div class="card">
+    <div class="image-container">
+      <img src="london.png" alt="London Trip">
+      <div class="discount-badge">50% Off</div>
+    </div>
+    <div class="info">
+      <div class="info-top">
+        <span>London, UK</span>
+        <span>$4.2k</span>
+      </div>
+      <div class="info-bottom">
+        <i class="fas fa-location-arrow"></i>
+        12 Days Trip
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
